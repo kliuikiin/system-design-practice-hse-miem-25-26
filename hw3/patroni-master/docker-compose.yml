@@ -46,7 +46,7 @@ services:
         hostname: haproxy
         container_name: demo-haproxy
         ports:
-            - "5000:5000"
+            - "5002:5000"
             - "5001:5001"
         command: haproxy
         environment: &haproxy_env
