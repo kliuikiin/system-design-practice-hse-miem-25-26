@@ -1,5 +1,3 @@
-version: "3.8"
-
 services:
   kafka01:
     container_name: kafka01
@@ -58,6 +56,7 @@ services:
         
   kafka-kouncil:
     image: consdata/kouncil:1.4
+    platform: linux/amd64
     container_name: kafka-kouncil
     ports:
       - "8082:8080"
